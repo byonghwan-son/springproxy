@@ -1,6 +1,7 @@
 package hello.proxy;
 
 import hello.proxy.config.v5_autoproxy.AutoProxyConfig;
+import hello.proxy.config.v6_aop.AopConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Import;
@@ -14,7 +15,8 @@ import org.springframework.context.annotation.Import;
 //    , ProxyFactoryConfigV1.class
 //    , ProxyFactoryConfigV2.class
 //    , BeanPostProcessorConfig.class
-    , AutoProxyConfig.class
+//    , AutoProxyConfig.class
+    , AopConfig.class
 })
 @SpringBootApplication(scanBasePackages = "hello.proxy.app.v3")
 public class ProxyApplication {
